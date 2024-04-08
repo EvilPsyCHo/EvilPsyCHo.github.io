@@ -84,3 +84,4 @@ hide_header: true
 
 支持Baichuan2, ChatGLM3, Yi, Qwen等中文主流模型及 Llama / Mistral / Mixtral-8x7b等英文模型。
 ![](/images/post_llamafactory/support-models.png)
+
