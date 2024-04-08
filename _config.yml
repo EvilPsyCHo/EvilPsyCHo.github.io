@@ -65,7 +65,6 @@ minima:
     - { platform: telegram,       user_url: "https://t.me/kky1024" }
     - { platform: twitter,        user_url: "https://twitter.com/evilpsycho42" }
     - { platform: bilibili,       user_url: "https://space.bilibili.com/1751715710" }
-    - { platform: xxx,       user_url: "kky42.com" }
   #  - { platform: devto,          user_url: "https://dev.to/jekyll" }
   #  - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
