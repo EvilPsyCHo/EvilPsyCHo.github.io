@@ -22,19 +22,19 @@
 - Unsloth，2023年提出，引入Triton降低LoRA梯度方向传播的计算开销
 
 
-![](./fine-tuning-tech.png)
+![](/_posts/LlamaFactory-2024-Best-Practices-for-LLMs-Training/fine-tuning-tech.png)
 
 **LlamaFactory**对比了多种模型fine-tuning方法在显存开销，训练速度，训练效果。下表中Memory为训练显存最高占用，Throughput为训练Tokens吞吐量，PPL（perplexity）为模型在训练数据集混淆度，越低越好。观察可发现**LoRA**, **QLoRA**在显存开销和PPL（训练效率）表现很好，吞吐量略逊于Freeze-tuning冻结部分参数微调。
 
-![](./fine-tuning-exp.png)
+![](/_posts/LlamaFactory-2024-Best-Practices-for-LLMs-Training/fine-tuning-exp.png)
 
 对6个LLMs在3个下游任务fine-tuning对比中，**QLoRA**方法在绝大多数情况下均取得很好的效果，较baseline有了显著提升，说明了fine-tuning对下游任务的有效性，同时作者发现在英文数据集**Mistral 7B**取得最近，中文数据集**Qwen1.5-7B**取得最佳，说明微调后的模型性能很大程度上依然依赖基座模型的固有能力和语言偏好。
 
-![](./fine-tuning-exp2.png)
+![](/_posts/LlamaFactory-2024-Best-Practices-for-LLMs-Training/fine-tuning-exp2.png)
 
 ## LlamaFactory工程框架
 
-![](./architecture-of-llama-factory.png)
+![](/_posts/LlamaFactory-2024-Best-Practices-for-LLMs-Training/architecture-of-llama-factory.png)
 
 ### Model Loader
 
@@ -49,7 +49,7 @@
 
 ### Dota Worker
 
-![](./data.png)
+![](/_posts/LlamaFactory-2024-Best-Practices-for-LLMs-Training/data.png)
 
 - 采用datasets进行数据加载/处理
 - 支持超大数据集的流式加载
@@ -74,7 +74,7 @@
 基于图形界面的模型微调网页前端，配置模型训练数据/参数，监控模型训练，评估模型训练性能，支持中文/英文/俄文界面。
 
 不同训练方法/模型的硬件要求：
-![](./hardware-requirement.png)
+![](/_posts/LlamaFactory-2024-Best-Practices-for-LLMs-Training/hardware-requirement.png)
 
 支持Baichuan2, ChatGLM3, Yi, Qwen等中文主流模型及 Llama / Mistral / Mixtral-8x7b等英文模型。
-![](./support-models.png)
+![](/_posts/LlamaFactory-2024-Best-Practices-for-LLMs-Training/support-models.png)
