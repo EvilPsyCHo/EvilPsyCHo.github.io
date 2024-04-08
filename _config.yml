@@ -6,8 +6,8 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  分享大型语言模型，多模态，深度学习，人工智能应用，Kaggle的思考与实践。
-  Sharing Reflections and Practices on Large-Scale Language Models, Multimodality, Deep Learning, Kaggle, and Artificial Intelligence Applications.
+  分享大型语言模型，多模态，深度学习，Kaggle与人工智能应用的思考与实践。
+  Sharing Thinking and Practices on Large-Scale Language Models, Multimodality Models, Deep Learning, Kaggle, and AI Applications.
 
 include:
   - images
@@ -58,7 +58,7 @@ minima:
   # Generate social links in footer.
   social_links:
     - { platform: github,         user_url: "https://github.com/EvilPsyCHo" }
-    - { platform: x,              user_url: "https://x.com/evilpsycho42" }
+    # - { platform: x,              user_url: "https://x.com/evilpsycho42" }
     - { platform: youtube,        user_url: "https://www.youtube.com/channel/UCxu8MUtWtqfdDB2eTABSePg" }
     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/zhirui-zhou-b751a3126" }
     - { platform: telegram,       user_url: "https://t.me/kky1024" }
