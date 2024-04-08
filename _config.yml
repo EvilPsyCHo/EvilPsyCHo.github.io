@@ -70,8 +70,8 @@ minima:
   #  - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
   #  - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
    - { platform: telegram,       user_url: "https://t.me/kky1024" }
-   - { platform: twitter,        user_url: "https://twitter.com/evilpsycho42" }
-  #  - { platform: x,              user_url: "https://x.com/evilpsycho42" }
+  #  - { platform: twitter,        user_url: "https://twitter.com/evilpsycho42" }
+   - { platform: x,              user_url: "https://x.com/evilpsycho42" }
    - { platform: youtube,        user_url: "https://www.youtube.com/channel/UCxu8MUtWtqfdDB2eTABSePg" }
 
 
