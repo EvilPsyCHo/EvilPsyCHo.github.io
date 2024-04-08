@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-![](/_assets/about/test.png)
+![](/images/about/test.png)
