@@ -1,6 +1,7 @@
 ---
 layout: page
-title: project
+title: Project
+permalink: /project/
 ---
 
 RolePlay ..

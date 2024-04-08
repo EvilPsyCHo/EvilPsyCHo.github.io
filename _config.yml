@@ -30,21 +30,22 @@ plugins:
 # in order as they should show up.
 header_pages:
   - about.md
+  - project.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
-minima:
-  # Minima skin selection.
-  # Available skins are:
-  # classic	           Default, light color scheme.
-  # dark	             Dark variant of the classic skin.
-  # auto	             Adaptive skin based on the default classic and dark skins.
-  # solarized-light	   Light variant of solarized color scheme.
-  # solarized-dark	   Dark variant of solarized color scheme.
-  # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: classic
+# minima:
+#   # Minima skin selection.
+#   # Available skins are:
+#   # classic	           Default, light color scheme.
+#   # dark	             Dark variant of the classic skin.
+#   # auto	             Adaptive skin based on the default classic and dark skins.
+#   # solarized-light	   Light variant of solarized color scheme.
+#   # solarized-dark	   Dark variant of solarized color scheme.
+#   # solarized	         Adaptive skin for solarized color scheme skins.
+#   skin: auto
   
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
