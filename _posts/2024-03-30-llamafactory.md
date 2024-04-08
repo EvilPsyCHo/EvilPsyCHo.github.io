@@ -4,8 +4,6 @@ layout: page
 hide_header: true
 ---
 
-# 2024年LLMs训练的最佳实践
-
 ![](/images/post_llamafactory/paper-cover.png)
 
 **LLAMAFACTORY: Unified Efficient Fine-Tuning of 100+ Language Models**是一篇LLMs工程好文，来自[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)开源团队。该文从工程的角度对最近的模型高效微调技术做了系统性的整理和对比，同时就模型微调过程中的数据处理、模型参数初始化、训练设置和评估细节都做了比较全面的介绍，如果你整准备训练一个大语言模型，先看看这篇文章会少走很多弯路。
