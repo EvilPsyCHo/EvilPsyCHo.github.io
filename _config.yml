@@ -1,6 +1,6 @@
 title: KKY的不定期博客
 author:
-  name: KKY
+  name: 周知瑞
   email: evilpsycho42@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
@@ -58,6 +58,7 @@ minima:
   # Generate social links in footer.
   # https://simpleicons.org/?q=bilibili
   # https://icons.getbootstrap.com/
+  # https://iconduck.com/icons/506/bilibili
   social_links:
     - { platform: github,         user_url: "https://github.com/EvilPsyCHo" }
     # - { platform: x,              user_url: "https://x.com/evilpsycho42" }
