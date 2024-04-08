@@ -22,6 +22,10 @@ layout: default
   </div>
 
   <div class="post-content e-content" itemprop="articleBody">
+    <!-- Polyfill for ES6 features -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- MathJax script -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     {{ content }}
     {% include navlinks.html %}
   </div>
