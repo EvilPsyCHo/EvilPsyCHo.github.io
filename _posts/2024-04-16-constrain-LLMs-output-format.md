@@ -1,6 +1,6 @@
 ---
 title: Using-llamacpp-grammar-to-Constrain-LLMs-output-format
-layout: page
+layout: post
 hide_header: true
 ---
 
@@ -63,5 +63,25 @@ numberlist ::= "["   ws   "]" | "["   ws   string   (","   ws   number)*   ws   
 
 ```
 
-Finnally, we can use this 
+Finally, pass the grammar into llama.cpp model and the model output will meet our definition perfectly.
 
+### code example
+
+```python
+import json
+from llama_cpp import Llama, LlamaGrammar
+
+model = Llama("/data/hf/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf")
+grammar = LlamaGrammar.from_file("test_grammar") # save the grammar string into a file
+
+prompt = """Player1 and Player2 are playing a game named happy ending, following is the conversation between the two players:
+
+Player1: hi
+Player2: hello, how do you do recently?
+
+Now reponse the game state, action player and message with Json format. Message involves the environment description string."""
+res = model.create_completion(prompt, max_tokens=1000, grammar=grammar)
+print(json.loads(res["choices"][0]['text']))
+```
+
+The output is : `{'game_state': 'game over', 'active_player': 'Player2', 'message': 'This is a happy ending after Player1 says hi and Player2 replies hello.'}` which match the format perfectly.
