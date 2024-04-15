@@ -1,6 +1,6 @@
 ---
 title: Using-llamacpp-grammar-to-Constrain-LLMs-output-format
-layout: post
+layout: page
 hide_header: true
 ---
 
@@ -23,4 +23,45 @@ Based on the modifications to the sampling rules ultilizing token probability pr
 
 ![](../images/post_constrain_llms_output_format/translator.png)
 
+For example, if our desired output format like this:
+```json
+{
+  "game_state": string, # "game over" 或 "game on progress",
+  "message": string,
+  "active_player": string,
+}
+```
+
+First, define data struction with `TypeScript`:
+
+```typescript
+interface DM {
+  game_state: GameState;
+  active_player: string;
+  message: string;
+}
+
+enum GameState {
+  GameOver = "game over",
+  GameOnProgress = "game on progress",
+}
+```
+
+Then, translate it to `llamacpp grammar`:
+
+```grammar
+root ::= DM
+GameState ::= "\"game over\"" | "\"game on progress\""
+DM ::= "{"   ws   "\"game_state\":"   ws   GameState   ","   ws   "\"active_player\":"   ws   string   ","   ws   "\"message\":"   ws   string   "}"
+DMlist ::= "[]" | "["   ws   DM   (","   ws   DM)*   "]"
+string ::= "\""   ([^"]*)   "\""
+boolean ::= "true" | "false"
+ws ::= [ \t\n]*
+number ::= [0-9]+   "."?   [0-9]*
+stringlist ::= "["   ws   "]" | "["   ws   string   (","   ws   string)*   ws   "]"
+numberlist ::= "["   ws   "]" | "["   ws   string   (","   ws   number)*   ws   "]"
+
+```
+
+Finnally, we can use this 
 
