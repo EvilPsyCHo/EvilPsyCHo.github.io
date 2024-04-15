@@ -85,3 +85,27 @@ print(json.loads(res["choices"][0]['text']))
 ```
 
 The output is : `{'game_state': 'game over', 'active_player': 'Player2', 'message': 'This is a happy ending after Player1 says hi and Player2 replies hello.'}` which match the format perfectly.
+
+## 😆 A more prefered way for Python!
+
+Instead of writing `TypeScript` code, we can use `Pydantic`:
+
+```python
+from pydantic import BaseModel
+from enum import Enum
+
+class GameState(str, Enum):
+    game_over = "game over"
+    game_active = "game on progress"
+
+class DM(BaseModel):
+    game_state : GameState
+    message: str
+    active_player: str
+
+grammer = LlamaGrammar.from_json_schema(DM.schema_json())
+res = model.create_completion(prompt, max_tokens=1000, grammar=grammar)
+print(json.loads(res["choices"][0]['text']))
+```
+
+The output is : `{'game_state': 'game on progress', 'active_player': 'Player1', 'message': "Player1 said 'hi', Player2 replied saying 'hello'"}`, Great!
