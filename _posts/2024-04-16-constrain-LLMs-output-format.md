@@ -1,6 +1,6 @@
 ---
-title: Using llamacpp grammar and pydantic to Constrain LLMs output format
-layout: page
+title: Using-llamacpp-grammar-to-Constrain-LLMs-output-format
+layout: post
 hide_header: true
 ---
 
@@ -18,3 +18,9 @@ Based on the modifications to the sampling rules ultilizing token probability pr
 ## 🚀 Using llama.cpp grammar to enforce a specified format for LLMs output
 
 `Llamacpp grammar` is based on a specific set of syntax, but we don't need to learn it, there is a simple way to do this 😆.
+1. Define the data structure with `TypeScript`
+2. Goto [intrinsiclabs](https://grammar.intrinsiclabs.ai/) and translate `TypeScript` to `Llamacpp grammar`
+
+![](../images/post_constrain_llms_output_format/translator.png)
+
+
