@@ -17,4 +17,4 @@ Based on the modifications to the sampling rules ultilizing token probability pr
 
 ## 🚀 Using llama.cpp grammar to enforce a specified format for LLMs output
 
-Llamacpp grammar
+`Llamacpp grammar` is based on a specific set of syntax, but we don't need to learn it, there is a simple way to do this 😆.
