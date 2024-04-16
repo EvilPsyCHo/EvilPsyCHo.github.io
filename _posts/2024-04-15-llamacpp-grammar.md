@@ -21,7 +21,7 @@ Based on the modifications to the sampling rules ultilizing token probability pr
 1. Define the data structure with `TypeScript`
 2. Goto [intrinsiclabs](https://grammar.intrinsiclabs.ai/) and translate `TypeScript` to `Llamacpp grammar`
 
-![](../images/post_constrain_llms_output_format/translator.png)
+![](/images/post_constrain_llms_output_format/translator.png)
 
 For example, if our desired output format like this:
 ```json
