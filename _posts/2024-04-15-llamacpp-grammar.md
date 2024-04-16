@@ -13,7 +13,7 @@ Based on the modifications to the sampling rules ultilizing token probability pr
 - [functionary](https://github.com/MeetKai/functionary)
 - [https://github.com/1rgs/jsonformer](jsonformer)
 - [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
-- [outlines]()
+- [outlines](https://github.com/outlines-dev/outlines)
 
 ## 🚀 Using llama.cpp grammar to enforce a specified format for LLMs output
 
